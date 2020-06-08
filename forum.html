@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <form action="DETAILS">
+    <form action="response.html">
         <fieldset>
             <legend>Enter Details: </legend>
-            <label>Name: <input type="text" name="Name" id="Name" placeholder="your name"></label>
-            <label>E-mail: <input type="email" name="E-mail" id="E-mail" placeholder="me@me.com"></label>
-            <label>Confirm E-mail: <input type="email" name="E-mail" id="E-mail2" placeholder="me@me.com"></label>
+            <label>Name: <input type="text" name="Name" id="Name" placeholder="your name" required></label>
+            <label>E-mail: <input type="email" name="E-mail" id="E-mail" placeholder="me@me.com" required></label>
+            <label>Confirm E-mail: <input type="email" name="E-mail" id="E-mail2" placeholder="me@me.com" required></label>
             <label>Password: <input type="password" name="Password" id="Password"></label>
             <label>Player-ID: <input type="number" name="Player-ID" id="Player-ID" placeholder="16-digit ID"></label>
             <label for="Gender">Gender: </label>
@@ -26,7 +26,7 @@
             <label>Whatsapp: <input type="number" name="Whatsapp" id="Whatsapp"></label>
             <label>Experience level: <input type="range" name="Experience" id="Experience"></label>
             <label>Date of Birth: <input type="date" name="DOB" id="DOB"></label>
-            <a href="response.html"><button type="button" onclick="return check()">Submit</button></a>
+            <label><input type="submit" name="submit" onclick="return check()"></label>
         </fieldset>
     </form>
 </body>
